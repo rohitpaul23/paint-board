@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">Draw your Imagination</div>
+    <div class="body">
+        <div class="drawingSheet"></div>
+        <div class="drawingBoard">
+            <div class="gridSize">
+                <p>Grid Size : </p>
+                <input type="range" min="16" max="128" value="16" oninput="gridFunction(this.value)">
+                <output class="ratio">16 x 16</output>
+            </div>
+            <div class="color">
+                <p>Choose color : </p>
+                <input type="color">
+            </div>
+            <button class="clear">Clear</button>
+            <button class="eraser">Eraser</button>
+        </div>
+    </div>
+    <div class="footer">@rohitpaul23</div>
+    <script src="javascript.js"></script>
+</body>
+</html>
